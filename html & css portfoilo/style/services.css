@@ -1,0 +1,109 @@
+
+.sectionOne{
+    display: grid;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+.sectionOne_content_text{
+    font-family: var(--font-2);
+    font-size: var(--sub);
+}
+
+[class ^= "sectionOne_card--"] {
+    font-family: var(--font-2);
+    box-shadow: var(--shadow);
+    padding: 20px 25px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    display: grid;
+    gap: 10px;
+
+    border-radius: 10px ;
+    
+}
+
+.sectionOne_cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    font-family: var(--font-1);
+
+}
+
+
+
+.sectionOne_card_1_head{
+    font-size: var(--sub);
+    color: var(--color-dark-75);
+}
+
+.sectionOne_card_1_sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    
+    
+}
+
+.amount{
+    font-weight: bold;
+    font-size: var(--h4);
+}
+
+.time{
+    color: var(--color-dark-50);
+    font-size: var(--body);
+}
+
+
+.sectionOne_card_1_text{
+    font-size: var(--body);
+    color: var(--color-dark-75);
+}
+
+
+.sectionOne_card_1_feact{
+    display: grid;
+    gap: 12px;
+}
+
+.sectionOne_card_1_feact i{
+    color: var(--color-green-100);
+}
+
+
+
+
+.sectionOne_card_1_btn {
+   justify-self: center;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+
+
+@media (max-width:768px) {
+
+    .sectionOne_cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .sectionOne_cards{
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:548px) {
+    .sectionOne_cards{
+        grid-template-columns: repeat(1,1fr);
+    }    
+
+    .navbar_menu{
+        top: 10vh;
+    }
+
+}

@@ -1,0 +1,200 @@
+/**
+* ! style for section one
+*/
+
+.section_one_left_text{
+    font-size: var(--body);
+    font-family: var(--font-2);
+    color: var(--color-white-75);
+}
+
+.section_one_left_btn {
+    align-self: start;
+    margin-top: 20px;
+}
+
+
+/**
+* ! style for section second
+*/
+.section_sec{
+    padding: 40px 0;
+    display: grid;
+    gap: 30px;
+}
+ 
+
+.section_sec_text_3 {
+    font-family: var(--font-2);
+    font-size: var(--sub);
+}
+
+.section_sec_logo{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.section_sec_logo img{
+    justify-self: center;
+    align-self: center;
+}
+
+.section_sec_btn{
+    justify-self: center;
+}
+
+/**
+* ! style for sectionThree
+*/
+
+.sectionThree_right_text{
+    font-family: var(--font-2);
+    font-size: var(--body);
+    color: var(--color-dark-50);
+}
+
+.sectionThree_right_btn{
+    align-self: start;
+}
+
+
+/**
+* ! style for sectionFour
+*/
+.sectionFour_left_text{
+    font-family: var(--font-2);
+    font-size: var(--body);
+    color: var(--color-dark-50);
+}
+
+.sectionFour_left_btn{
+    align-self: start;
+}
+
+/**
+* ! style for sectionFive
+*/
+
+
+
+.sectionFive_content_text
+{
+    font-family: var(--font-2);
+    font-size: var(--sub);
+}
+
+.sectionFive{
+    display: grid;
+    gap: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.sectionFive_cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    
+}
+
+[class ^= "sectionFive_cards_"] {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 25px;
+    border-radius: 10px;
+    gap: 15px;
+    box-shadow: var(--shadow);
+}
+
+[class ^= "sectionFive_cards_"] .name{
+    font-family: var(--font-1);
+    font-size: var(--h5);
+    font-weight: bold;
+}
+
+[class ^= "sectionFive_cards_"] .pos{
+    font-family: var(--font-2);
+    font-size: var(-h6);
+    color: var(--color-dark-75);
+    text-transform: uppercase;
+}
+
+.sectionFive_btn{
+    justify-self: center;
+}
+
+
+/**
+* ! style for footer
+*/
+
+.footer{
+    background-color: var(--color-green-100);
+   height: 100px;
+  }
+
+.footer_left{
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.footer_right_text{
+    flex-direction: row;
+    font-family: var(--font-2);
+    font-size: var(--sub);
+}
+
+
+
+
+
+
+
+
+
+
+
+  /**
+ * ! media queries
+ */
+
+ @media (max-width:1200px) {
+    .section_sec_logo{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+    
+ }
+
+@media (max-width:768px) {
+    .section_one_left , .sectionFour_left{
+        order: 1;
+    }
+
+    .section_one_right, .sectionFour_right{
+        order: 0;
+    }
+
+    .sectionFive_cards{
+        grid-template-columns: repeat(2,1fr); 
+    }
+}
+
+
+@media (max-width:568px) {
+    .section_sec_logo{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+
+    .sectionFive_cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+ }
+
+
+
+

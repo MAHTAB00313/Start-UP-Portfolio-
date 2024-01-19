@@ -1,0 +1,34 @@
+/**
+* ! style for portfolio 
+*/
+
+/**
+* ! style for portfolio section One
+*/
+
+.sectionOne{
+    display: grid;
+    gap: 20px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.sectionOne_content_text{
+    font-family: var(--font-2);
+    font-size: var(--sub);
+}
+.sectionOne_img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+
+.sectionOne_btn{
+    justify-self: center;
+}
+
+@media (max-width: 568px) {
+    .sectionOne_img{
+        grid-template-columns: repeat(1,1fr);
+    }   
+}
